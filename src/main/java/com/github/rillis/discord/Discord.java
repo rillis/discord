@@ -1,6 +1,5 @@
 package com.github.rillis.discord;
 
-import java.io.File;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.net.MalformedURLException;
@@ -10,8 +9,6 @@ import javax.net.ssl.HttpsURLConnection;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
-
-import com.github.rillis.Files.FileUtils;
 
 public class Discord {
 	private String url;
