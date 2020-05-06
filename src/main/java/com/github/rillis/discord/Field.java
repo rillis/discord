@@ -25,6 +25,10 @@ public class Field {
 			json.put("inline", inline);
 		}
 		
+		if(json.toString().equals("{}")) {
+			return null;
+		}
+		
 		return json;
 	}
 }

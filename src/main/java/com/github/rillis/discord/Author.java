@@ -24,6 +24,11 @@ public class Author {
 		if(icon_url != null && !icon_url.equals("")) {
 			json.put("icon_url", icon_url);
 		}
+		
+		if(json.toString().equals("{}")) {
+			return null;
+		}
+		
 		return json;
 	}
 	

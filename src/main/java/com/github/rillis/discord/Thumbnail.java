@@ -16,6 +16,10 @@ public class Thumbnail {
 			json.put("url", url);
 		}
 		
+		if(json.toString().equals("{}")) {
+			return null;
+		}
+		
 		return json;
 	}
 }

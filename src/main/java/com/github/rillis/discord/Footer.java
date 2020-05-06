@@ -21,6 +21,10 @@ public class Footer {
 			json.put("icon_url", icon_url);
 		}
 		
+		if(json.toString().equals("{}")) {
+			return null;
+		}
+		
 		return json;
 	}
 }

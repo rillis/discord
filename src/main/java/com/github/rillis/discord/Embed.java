@@ -27,7 +27,7 @@ public class Embed {
 		this.footer = footer;
 	}
 
-	public JSONObject getJSON() {
+	public JSONObject getJSON() {		
 		JSONObject json = new JSONObject();
 		
 		if(author != null) {
@@ -64,6 +64,10 @@ public class Embed {
 		}
 		if(footer != null) {
 			json.put("footer", footer.getJSON());
+		}
+		
+		if(json.toString().equals("{}")) {
+			return null;
 		}
 		
 		return json;
